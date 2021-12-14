@@ -10,32 +10,32 @@ public class T01E01 {
 		System.out.println("Digite o segundo numero: ");
 		double segundoNumero = sc.nextDouble();
 		
-		System.out.println("Digite a operacao: ");	
-		char operacao = sc.next().charAt(0);
+		System.out.println("Digite a op: ");	
+		char op = sc.next().charAt(0);
 
-		switch (operacao) {
+		switch (op) {
 			case '+':
 				double soma = primeiroNumero + segundoNumero;
-				System.out.printf("%.2f %c %.2f = %.2f\n", primeiroNumero, operacao, segundoNumero, soma);
+				System.out.printf("%.2f %c %.2f = %.2f\n", primeiroNumero, op, segundoNumero, soma);
 				
 				break;
 			case '-':
 				double sub = primeiroNumero - segundoNumero;
-				System.out.printf("%.2f %c %.2f = %.2f\n", primeiroNumero, operacao, segundoNumero, sub);
+				System.out.printf("%.2f %c %.2f = %.2f\n", primeiroNumero, op, segundoNumero, sub);
 				
 				break;
 			case '*':
 				double vezes = primeiroNumero * segundoNumero;
-				System.out.printf("%.2f %c %.2f = %.2f\n", primeiroNumero, operacao, segundoNumero, vezes);
+				System.out.printf("%.2f %c %.2f = %.2f\n", primeiroNumero, op, segundoNumero, vezes);
 				
 				break;
 			case '/':
 				double divisao = primeiroNumero / segundoNumero;
-				System.out.printf("%.2f %c %.2f = %.2f\n", primeiroNumero, operacao, segundoNumero, divisao);
+				System.out.printf("%.2f %c %.2f = %.2f\n", primeiroNumero, op, segundoNumero, divisao);
 				
 				break;
 			default:
-				System.out.println("Operacao invalida!");
+				System.out.println("op invalida!");
 		}
 	}
 }
